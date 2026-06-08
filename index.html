@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z I V A G</title>
+    <link rel="icon" type="image/png" href="zivagNB.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -76,7 +77,7 @@
 
     
         <!-- Add Logo Below About Us Section -->
-        <img src="logoNB.png" alt="ZIVAG Logo"> <!-- Replace with actual path to logo -->
+        <img src="zivaglogo.jpg" alt="ZIVAG Logo"> <!-- Replace with actual path to logo -->
     </section>
     
     <section id="contact" class="contact-us">
@@ -111,38 +112,53 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="info-text">
                     <h3>Location</h3>
-                    <p>Q7 Mannheim</p>
+                    <p>Mannheim</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h3>Z I V A G</h3>
-                <p>Empowering Your Digital Presence</p>
-            </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4>Follow Us</h4>
-                <ul>
-                    <li><a href="https://www.tiktok.com/@zivag_?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-                    <li><a href="https://instagram.com/zivag_development" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h3>Z I V A G</h3>
+            <p>Empowering Your Digital Presence</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Z I V A G - All Rights Reserved</p>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </footer>
+
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <ul>
+                <li>
+                    <a href="https://www.tiktok.com/@zivag_?lang=en" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/zivag_development" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span>  Z I V A G - All Rights Reserved</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
     
 </body>
 </html>
